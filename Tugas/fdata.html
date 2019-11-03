@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<div>
+		<h3>Tambah Data</h3>
+		<form action="tambah.php" method="POST" enctype="multipart/form-data">
+			<div>
+				<label>NRP</label>
+				<input type="text" name="nrp">
+			</div>
+			<div>
+				<label>Nama</label>
+				<input type="text" name="nama">
+			</div>
+			<div>
+				<label>Photo</label>
+				<input type="file" name="foto" id="foto" >
+			</div>
+			<div>
+				<label>Jurusan</label>
+              <select name="jurusan">
+                  <option value="1">Telekomunikasi</option>
+                  <option value="2">Elka</option>
+                  <option value="3">IT</option>
+                  <option value="4">Elni</option>
+              </select>
+			</div>
+			<button type="submit" name="tambah" value="Upload">Tambah</button>
+		</form>
+	</div>
+
+	<div>
+		<h3>SEARCH DATA</h3>
+		<form action="cari.php" method="POST" enctype="multipart/form-data">
+			<div>
+				<label>============================================</label>
+			</div>
+			<div>
+				<label>Nama</label>
+           		<input type="text" type="text" name="keyword">
+            	<input type="submit" name="cari" value="cari">
+			</div>
+		</form>
+		<h3>HAPUS DATA</h3>
+		<form action="hapus.php" method="POST" enctype="multipart/form-data">
+			<div>
+				<label>============================================</label>
+			</div>
+			<div>
+				<label>NRP:</label>
+				<input type="text" name="delete">
+				<input type="submit" name ="hapus" value="hapus Data">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
